@@ -73,20 +73,6 @@ export default class Discounts extends Component {
   };
 
   /**
-  * Handle AppStateChange
-  */
-  _handleAppStateChange = (appState: string): void => {
-    const { store } = this.state;
-    if (appState === 'active') {
-      store.dispatch(appActions.onAppResume());
-    }
-    Platform.OS === 'android' &&
-      NetInfo.isConnected
-        .fetch()
-        .done(isConnected => this._handleConnectionChange(isConnected));
-  };
-
-  /**
   * Handle connection status change
   */
   _handleConnectionChange = (isConnected: boolean): void => {
