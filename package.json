@@ -1,0 +1,43 @@
+{
+  "name": "LaundryHeap",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android": "react-native run-android",
+    "build-android": "cd android && ./gradlew assembleRelease && cd ..",
+    "flow": "flow",
+    "test": "jest"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-node": "5.2.1",
+    "moment": "2.20.1",
+    "react": "16.0.0",
+    "react-native": "0.51.0",
+    "react-native-localization": "0.2.1",
+    "react-navigation": "1.0.0-beta.22",
+    "react-navigation-slide-from-right-transition": "1.0.4",
+    "react-redux": "5.0.6",
+    "redux": "3.7.2",
+    "redux-logger": "3.0.6",
+    "redux-persist": "4.9.1",
+    "redux-persist-migrate": "5.0.0",
+    "redux-thunk": "2.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.1.2",
+    "babel-jest": "22.0.4",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "4.14.0",
+    "eslint-plugin-promise": "3.6.0",
+    "eslint-plugin-react": "7.5.1",
+    "eslint-plugin-react-native": "3.2.0",
+    "flow-bin": "0.61.0",
+    "jest": "22.0.4",
+    "react-test-renderer": "16.0.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
