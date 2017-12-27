@@ -9,11 +9,10 @@ import 'react-native';
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Home from './Home';
+import Home from './components/Home';
 
 export class HomeContainer extends Component {
   render(): React.Element<*> {
-    console.log('this', this);
     return <Home />;
   }
 }
